@@ -1,7 +1,7 @@
 {
   "name": "app-marvel",
   "version": "0.1.0",
-  "homepage": "https://github.com/ncsoftt2/app-marvel",
+  "homepage": "https://ncsoftt2.github.io/app-marvel",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
