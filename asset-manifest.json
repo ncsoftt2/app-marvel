@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ncsoftt2/app-marvel/static/css/main.b0dd60d3.css",
+    "main.js": "/ncsoftt2/app-marvel/static/js/main.783cda8c.js",
+    "static/media/Avengers.png": "/ncsoftt2/app-marvel/static/media/Avengers.4065c8f9c94e3d8b039a.png",
+    "static/media/Avengers_logo.png": "/ncsoftt2/app-marvel/static/media/Avengers_logo.9eaf219344d83362e830.png",
+    "index.html": "/ncsoftt2/app-marvel/index.html",
+    "main.b0dd60d3.css.map": "/ncsoftt2/app-marvel/static/css/main.b0dd60d3.css.map",
+    "main.783cda8c.js.map": "/ncsoftt2/app-marvel/static/js/main.783cda8c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0dd60d3.css",
+    "static/js/main.783cda8c.js"
+  ]
+}
