@@ -1,6 +1,7 @@
 {
   "name": "app-marvel",
   "version": "0.1.0",
+  "homepage": "https://github.com/ncsoftt2/app-marvel",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
@@ -13,6 +14,7 @@
     "@types/react-dom": "^18.2.6",
     "axios": "^1.4.0",
     "formik": "^2.4.2",
+    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
@@ -29,7 +31,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
