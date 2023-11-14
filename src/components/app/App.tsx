@@ -1,6 +1,6 @@
 import AppHeader from "../appHeader/AppHeader";
 import {ROUTES} from "../../utils/routes";
-import {Route,Routes} from "react-router-dom";
+import {Navigate, Route, Routes} from "react-router-dom";
 import Home from "../Home/Home";
 import Wrapper from "../ItemsList/Wrapper";
 import Single from "../SingleElement/Single";
@@ -29,6 +29,7 @@ const App = () => {
                     <Route path={ROUTES.SINGLE_COMICS} element={<Single data={'comic'}
                                                                         item={comic}
                                                                         type={'comic'}/>}/>
+                    <Route path={"*"} element={<Navigate to={ROUTES.HOME}/>}/>
                 </Routes>
             </main>
         </div>

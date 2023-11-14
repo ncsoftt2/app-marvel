@@ -5,6 +5,7 @@ import {NavLink} from "react-router-dom";
 import {useAppDispatch, useAppSelector} from "../../hook";
 import * as Yup from 'yup';
 import './SearchForm.scss';
+import {ROUTES} from "../../utils/routes";
 
 const SearchForm = () => {
     const {charInfo,isError} = useAppSelector(({characters}) => characters);
@@ -16,8 +17,8 @@ const SearchForm = () => {
     const errorMessage = isError ? <div className="char__search-critical-error">Ошибка...</div> : null;
     const results = !charInfo ? null : charInfo.length > 0 ?
         <div className="char__search-wrapper">
-            <div className="char__search-success">Посетить страницу {charInfo[0].name}</div>
-            <NavLink to={`/characters/${charInfo[0].id}`} className="button button__secondary">
+            <div className="char__search-success" >Посетить страницу {charInfo[0].name}</div>
+            <NavLink to={`${ROUTES.HOME}/characters/${charInfo[0].id}`} className="button button__secondary">
                 <div className="inner">На страницу</div>
             </NavLink>
         </div> :
@@ -31,7 +32,7 @@ const SearchForm = () => {
                     charName: ''
                 }}
                 validationSchema = {Yup.object({
-                    charName: Yup.string().required('Обязательное поле')
+                    charName: Yup.string().required('Введите имя персонажа')
                 })}
                 onSubmit = { ({charName}) => {
                     updateChar(charName);
